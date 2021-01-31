@@ -1,0 +1,14 @@
+{
+  "name": "firebase-todo-list",
+  "version": "0.0.1",
+  "description": "Practice todo list with Firebase and Semantic UI",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fomantic-ui": "^2.8.7"
+  }
+}

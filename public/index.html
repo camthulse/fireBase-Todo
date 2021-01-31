@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⛽Gas⛽</title>
+    <!-- Semantic CSS -->
+    <link type="text/css" rel="stylesheet" href="../semantic/dist/semantic.min.css">
+    <!-- JQuery -->
+    <script
+			  src="https://code.jquery.com/jquery-3.5.1.min.js"
+			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+              crossorigin="anonymous"></script>
+    <!-- Semantic UI -->
+    <script src="../semantic/dist/semantic.min.js"></script>
+</head>
+<body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyD__LKSGWdxo0vXCQvMHfheLqmGPdrcMnM",
+        authDomain: "cthulse-todolist.firebaseapp.com",
+        projectId: "cthulse-todolist",
+        storageBucket: "cthulse-todolist.appspot.com",
+        messagingSenderId: "637388222638",
+        appId: "1:637388222638:web:44d972fb043521f6bcbd3f"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="./app.js" defer></script>
+    
+
+    
+
+
+    <!-- Website Begin -->
+    <h1>My Firebase Todo-List ⛽</h1>
+
+    <section id="loggedOut">
+        <button id="button-logIn" class="ui primary button">Sign in!</button>
+    </section>
+
+    <section id="loggedIn" hidden="true">
+        <div id="userDetails"></div>
+        <button id="button-logOut" class="ui red button">Sign out!</button>
+
+        <section id="todoList-wrapper">
+            <ul id="todoList">
+    
+            </ul>
+            <div id="todoList-add">
+                <input type="text" name="todoInput" id="todoInput">
+                <button id="todoAddBtn">Create todo!</button>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
