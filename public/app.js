@@ -53,7 +53,7 @@ auth.onAuthStateChanged(user => {
 
         unsubscribe = todoListRef.where('uid', '==', user.uid).onSnapshot(querySnapshot => {
             const items = querySnapshot.docs.map(doc => {
-                return `<li id="${doc.id}">${doc.data().todo} <button id="deleteTodo" onclick=deleteTodo(this)>X</button></li>`
+                return `<li class="list-group-item" id="${doc.id}">${doc.data().todo} <button class="btn btn-danger" id="deleteTodo" onclick=deleteTodo(this)>X</button></li>`
             });
             
             todoList.innerHTML = items.join('');
