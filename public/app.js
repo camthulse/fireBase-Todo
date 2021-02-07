@@ -31,8 +31,8 @@ auth.onAuthStateChanged(user => {
         loggedOut.hidden = true;
         userDetails.innerHTML = 
         `
-            <h1>User Name: ${user.displayName}</h1>
-            <h1>E-Mail: ${user.email}</h1>
+            <h1><span>User Name:</span> ${user.displayName}</h1>
+            <h1><span>E-Mail:</span> ${user.email}</h1>
         `;
 
         todoListRef = db.collection('todos');
@@ -53,7 +53,7 @@ auth.onAuthStateChanged(user => {
 
         unsubscribe = todoListRef.where('uid', '==', user.uid).onSnapshot(querySnapshot => {
             const items = querySnapshot.docs.map(doc => {
-                return `<li class="list-group-item" id="${doc.id}">${doc.data().todo} <button class="btn btn-danger" id="deleteTodo" onclick=deleteTodo(this)>X</button></li>`
+                return `<li class="list-group-item" id="${doc.id}"><span>${doc.data().todo}</span><button class="btn btn-danger" id="deleteTodo" onclick=deleteTodo(this)>X</button></li>`
             });
             
             todoList.innerHTML = items.join('');

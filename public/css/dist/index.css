@@ -19,8 +19,8 @@ body {
 }
 
 #web-wrapper {
-  min-width: 500px;
-  max-width: 750px;
+  min-width: 650px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,4 +50,61 @@ body {
   width: 100%;
   font-size: 30px;
   font-weight: 600;
+}
+#web-wrapper section#loggedIn {
+  background-color: #F8F8FF;
+  padding: 6%;
+}
+#web-wrapper section#loggedIn div#userDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+#web-wrapper section#loggedIn div#userDetails h1 {
+  font-size: 18pt;
+  font-weight: 300;
+}
+#web-wrapper section#loggedIn div#userDetails h1 span {
+  font-size: 20pt;
+  font-weight: 600;
+}
+#web-wrapper section#loggedIn #button-logOut {
+  font-size: 16pt;
+  font-weight: 600;
+}
+#web-wrapper section#loggedIn #todoList-wrapper {
+  background-color: #ffffff;
+  padding: 2%;
+  border-radius: 10px;
+}
+#web-wrapper section#loggedIn #todoList-wrapper ul#todoList {
+  text-align: start;
+}
+#web-wrapper section#loggedIn #todoList-wrapper ul#todoList li.list-group-item {
+  width: 100%;
+  display: flex;
+}
+#web-wrapper section#loggedIn #todoList-wrapper ul#todoList li.list-group-item span {
+  flex: 10;
+  width: 100%;
+}
+#web-wrapper section#loggedIn #todoList-wrapper ul#todoList li.list-group-item button {
+  flex: 1;
+}
+#web-wrapper section#loggedIn #todoList-wrapper #todoList-add {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  max-height: 38px;
+  margin-bottom: 2rem;
+}
+#web-wrapper section#loggedIn #todoList-wrapper #todoList-add #todoInput {
+  max-height: 38px;
+  flex: 3;
+  margin-right: 1rem;
+}
+#web-wrapper section#loggedIn #todoList-wrapper #todoList-add #todoAddBtn {
+  max-height: 38px;
+  flex: 2;
 }

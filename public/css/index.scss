@@ -19,8 +19,8 @@ body{
 }
 
 #web-wrapper{
-    min-width: 500px;
-    max-width: 750px;
+    min-width: 650px;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,6 +52,65 @@ body{
                 width: 100%;
                 font-size: 30px;
                 font-weight: 600;
+            }
+        }
+    }
+
+    section#loggedIn{
+        background-color: #F8F8FF;
+        padding: 6%;
+        div#userDetails{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            h1{
+                span{
+                    font-size: 20pt;
+                    font-weight: 600;
+                }
+                font-size: 18pt;
+                font-weight: 300;
+            }
+        }
+        #button-logOut{
+            font-size: 16pt;
+            font-weight: 600;
+        }
+        #todoList-wrapper{
+            background-color: #ffffff;
+            padding: 2%;
+            border-radius: 10px;
+            ul#todoList{
+                text-align: start;
+                li.list-group-item{
+                    width: 100%;
+                    display: flex;
+                    span{
+                        flex: 10;
+                        width: 100%;
+                    }
+                    button{
+                        flex: 1;
+                    }
+                }
+            }
+
+            #todoList-add{
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: row;
+                max-height: 38px;
+                margin-bottom: 2rem;
+                #todoInput{
+                    max-height: 38px;
+                    flex: 3;
+                    margin-right: 1rem;
+                }
+                #todoAddBtn{
+                    max-height: 38px;
+                    flex: 2;
+                }
             }
         }
     }
