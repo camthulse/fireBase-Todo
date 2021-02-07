@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#todoList-add{
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F8FF;
+}
+body{
+    max-width: 100vw;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#web-wrapper{
+    min-width: 500px;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+    h1#web-header{
+        font-size: 42px;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    section#loggedOut{
+        #button-logIn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            img{
+                width: 45px;
+                height: 45px;
+                margin-left: 1rem;
+                margin-right: 2rem;
+            }
+            span#logIn-txt{
+                height: 100%;
+                width: 100%;
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+    }
+}
